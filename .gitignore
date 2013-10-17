@@ -1,0 +1,4 @@
+mapa
+.build
+node_modules
+*.log
