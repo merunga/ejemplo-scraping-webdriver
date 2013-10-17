@@ -31,7 +31,7 @@ coffee scrap.coffee > scraping.log
 
 Este script creará un archivo `data/data-YYYY-MM-DD-HH-mm.json` con toda la data extraida.
 Para evitarles la chamba a todos, en el repositorio ya hay una carpeta `data` con el [resultado de una corrida completa](https://raw.github.com/merunga/ejemplo-scraping-webdriver/master/data/data-2013-10-13-23-33.json)
-completa del script.
+completa del script (5MB).
 
 Si quieres entender y adaptar este robotito, chequea el archivo `scrap.coffee` que tiene varios comentarios.
 
@@ -77,4 +77,4 @@ Esto generará un archivo `processed-data/data-YYYY-MM-DD-HH-mm.json` con el for
   "precio": 0.27
 }
 ```
-En la carpeta `processed-data` encontrarás el [archivo resultante](https://raw.github.com/merunga/ejemplo-scraping-webdriver/master/processed-data/data-2013-10-13-23-33.json) de todo el proceso de scrapeo y post-procesamiento
+En la carpeta `processed-data` encontrarás el [archivo resultante](https://raw.github.com/merunga/ejemplo-scraping-webdriver/master/processed-data/data-2013-10-13-23-33.json) de todo el proceso de scrapeo y post-procesamiento (2MB).
