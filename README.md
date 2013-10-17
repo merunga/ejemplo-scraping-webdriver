@@ -19,16 +19,21 @@ npm install webdriver-sync
 npm install underscore
 npm install coffeescript
 ```
+> En este caso he usado el paquete `webdriver-sync` en lugar del oficial `selenium-webdriver` porque mantiene
+ una API mucho más parecida a los bindings con otros lenguajes. Es decir que el código de este script es fácilmente
+ traducible a cualquier lenguaje que cuente con bindings para selenium, por ejemplo `ruby`, `python`, `java`, `perl`, `php` o `C#`
 
 Luego para comenzar a scrapear, sólo ejecuta en tu consola:
 ```
 coffee scrap.coffee > scraping.log
 ```
-> Ten en cuenta que este script realizará más de 3000 request a la página de origen, que dependiendo de tu conexión puede demorar hasta 5 horas y que tu IP puede ser banneada en el proceso.
+> Ten en cuenta que este script realizará más de 3000 request a la página de origen, que dependiendo de tu conexión puede demorar hasta 5 horas y que tu IP puede ser banneada en el proceso
 
 Este script creará un archivo `data/data-YYYY-MM-DD-HH-mm.json` con toda la data extraida.
 Para evitarles la chamba a todos, en el repositorio ya hay una carpeta `data` con el [resultado de una corrida completa](https://raw.github.com/merunga/ejemplo-scraping-webdriver/master/data/data-2013-10-13-23-33.json)
 completa del script.
+
+Si quieres entender y adaptar este robotito, chequea el archivo `scrap.coffee` que tiene varios comentarios.
 
 ### Post-procesamiento
 > Hasta aquí llega el ejercicio de scrapeo, pero como yapita vamos a post-procesar la data para obtener un
